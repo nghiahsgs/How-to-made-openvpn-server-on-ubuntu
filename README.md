@@ -1,38 +1,31 @@
 # How-to-made-openvpn-server-on-ubuntu
-How-to-made-openvpn-server-on-ubuntu
+How-to-made-openvpn-server-on-ubuntu-linode
 
-```
-cd ~
-mkdir Open_VPN
-cd Open_VPN
-wget https://raw.githubusercontent.com/angristan/openvpn-install/master/openvpn-install.sh
-chmod +x openvpn-install.sh
-bash openvpn-install.sh
-```
+## Step 1: Go to the marketplace and choose open vpn
+<img src='images/1.jpg'/>
 
-```
-Enter
-Do you want to enable IPv6 support : n
-What port do you want OpenVPN to listen to: 1) Default: 1194
-UDP is faster. Unless it is not available, you shouldn't use TCP: 1) UDP
-What DNS resolvers do you want to use with the VPN?:  9) Google (Anycast: worldwide)
-Do you want to use compression? It is not recommended since the VORACLE attack makes use of it : n
-Customize encryption settings? [y/n]: y
-Choose which cipher you want to use for the data channel : AES-128-GCM
-Choose what kind of certificate you want to use: ECDSA (recommended)
-Choose which curve you want to use for the certificate's key: prime256v1 (recommended)
-Choose which cipher you want to use for the control channel: ECDHE-ECDSA-AES-128-GCM-SHA256 (recommended)
-Choose what kind of Diffie-Hellman key you want to use: ECDH (recommended)
-Choose which curve you want to use for the ECDH key: prime256v1 (recommended)
-Which digest algorithm do you want to use for HMAC?: SHA-256 (recommended)
-tls-auth authenticates the packets, while tls-crypt authenticate and encrypt them: tls-crypt (recommended)
-Enter
-Enter
-```
+## Step 2: Choose ubuntu and 10$ for server
+<img src='images/2.jpg'/>
 
-```
-Client name: n-nghia
-Do you want to protect the configuration file with a password: Add a passwordless client
-```
+## Step 3: Enter password for limited user (optinal)
+<img src='images/3.jpg'/>
 
-After that: it will auto gen a profile openvpn on the /root, download it and start to use in client side !
+## Step 4: Enter root password of vps
+<img src='images/4.jpg'/>
+
+## Step 5: After the vps install successful, go to ssh vps and do the following command
+<img src='images/5.jpg'/>
+
+## Step 6: Go to /usr/local/openvpn_as
+<img src='images/6.jpg'/>
+
+## Step 7: Open the file init and read password of openvpn from the log
+<img src='images/7.jpg'/>
+
+## Set up and download project and happy vpn
+URL : https://ip_vps:943 and open the port (80,443,943)
+<img src='images/8.jpg'/>
+<img src='images/9.jpg'/>
+<img src='images/10.jpg'/>
+<img src='images/11.jpg'/>
+<img src='images/12.jpg'/>
